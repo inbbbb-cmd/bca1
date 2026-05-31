@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BCA — AI Legal &amp; Immigration SaaS Platform | Coming Soon</title>
+  <meta name="description" content="BCA — Business Consulting Automation. A compliance-first AI platform for the legal & immigration industry. Launching soon." />
+  <meta name="theme-color" content="#393B86" />
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="BCA — AI Legal & Immigration SaaS Platform" />
+  <meta property="og:description" content="A next-generation, compliance-first AI platform for legal & immigration services. Coming soon." />
+  <meta property="og:image" content="og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Self-hosted fonts (GDPR-safe — no request to Google) -->
+  <link rel="stylesheet" href="fonts.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="BCA — Business Consulting Automation, home">
+        <svg class="logo-mark" viewBox="0 0 64 56" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="bcaBlue" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#9AAAE2" />
+              <stop offset="1" stop-color="#4D5898" />
+            </linearGradient>
+          </defs>
+          <path d="M26 6 H56 L44 24 H14 Z" fill="url(#bcaBlue)" />
+          <path d="M22 22 H52 L40 40 H10 Z" fill="#ffffff" />
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">BCA</span>
+          <span class="brand-sub">Business Consulting Automation</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#problem">Problem</a>
+        <a href="#platform">Platform</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#team">Team</a>
+        <a class="btn btn-primary btn-sm" href="mailto:info@bluecardagency.de">Get early access</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="kicker reveal"><span class="dot"></span> Coming soon</p>
+        <h1 id="hero-title" class="reveal">The <span class="hl">AI</span> Legal &amp; Immigration <span class="hl">SaaS</span> Platform</h1>
+        <p class="hero-lead reveal">
+          <strong>BCA — Business Consulting Automation</strong> merges artificial intelligence,
+          automated sales, and 24/7 client service into one <strong>compliance-first</strong> system —
+          built for lawyers, consultants, and immigration agencies.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="mailto:info@bluecardagency.de">Get early access</a>
+          <p class="hero-cta-note">Be the first to know — write to <a href="mailto:info@bluecardagency.de">info@bluecardagency.de</a></p>
+        </div>
+
+        <ul class="hero-badges reveal" aria-label="Highlights">
+          <li>2000+ practical cases</li>
+          <li>Updated daily</li>
+          <li>40+ languages</li>
+          <li>Built for RDG &amp; EU AI Act</li>
+          <li>12+ years of legal knowledge</li>
+          <li>€2.5B German market</li>
+        </ul>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to learn more"><span></span></a>
+    </section>
+
+    <!-- ===== Mission / About ===== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container narrow center">
+        <p class="kicker kicker-dark reveal">Our mission</p>
+        <h2 id="about-title" class="reveal">
+          Give every lawyer, consultant, and agency a digital assistant that
+          <span class="hl-ink">automates the routine — not the legal judgment.</span>
+        </h2>
+        <p class="lead reveal">
+          BCA is a next-generation AI platform for the legal and immigration services industry —
+          a single digital assistant that handles client intake, helps select services, and processes
+          payments, while qualified professionals stay in charge of the legal advice.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Problem ===== -->
+    <section class="section section-mist" id="problem" aria-labelledby="problem-title">
+      <div class="container">
+        <p class="kicker kicker-dark reveal">The problem</p>
+        <h2 class="section-title reveal" id="problem-title">An industry that's expensive, fragmented, and increasingly regulated</h2>
+        <div class="cards cards-3">
+          <article class="card reveal">
+            <div class="card-stat">90%</div>
+            <p>of would-be applicants don't finish the relocation process on their own — legal consulting is too expensive and fragmented across providers. <em>(Industry estimate.)</em></p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">⏱</div>
+            <h3>Leads lost to manual work</h3>
+            <p>Agencies and law firms lose qualified leads to <strong>manual workflows and slow response times</strong>.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon" aria-hidden="true">⚖️</div>
+            <h3>A regulatory shift</h3>
+            <p>Germany's <strong>RDG</strong> restricts legal advice by unauthorized or automated systems, while the <strong>EU AI Act</strong> tightens obligations for high-risk and general-purpose AI.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Solution ===== -->
+    <section class="section" id="solution" aria-labelledby="solution-title">
+      <div class="container split">
+        <div class="split-text">
+          <p class="kicker kicker-dark reveal">The BCA solution</p>
+          <h2 class="section-title reveal" id="solution-title">A unified SaaS platform with compliance-first workflows</h2>
+          <ul class="check-list reveal">
+            <li><strong>AI-assisted client guidance</strong> — structured and verified. No unauthorized legal advice.</li>
+            <li><strong>Automated service &amp; package selection</strong> within a single company.</li>
+            <li><strong>Instant commercial offer generation.</strong></li>
+            <li><strong>Integrated online payment processing.</strong></li>
+            <li><strong>CRM &amp; analytics</strong> for tracking, reporting, and performance optimization.</li>
+          </ul>
+        </div>
+        <aside class="diff-card reveal" aria-label="Key differentiator">
+          <p class="kicker">Key differentiator</p>
+          <p class="diff-quote">
+            BCA runs on an <strong>internally verified legal knowledge base</strong> — built on
+            <strong>12+ years</strong> of practice and <strong>2000+ real BCA cases</strong>, and
+            <strong>updated daily</strong> — minimizing hallucinations and built to support compliance
+            with <strong>RDG</strong> and the <strong>EU AI Act</strong>.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== Platform / Features ===== -->
+    <section class="section section-mist" id="platform" aria-labelledby="platform-title">
+      <div class="container">
+        <p class="kicker kicker-dark reveal">The platform</p>
+        <h2 class="section-title reveal" id="platform-title">One system, the entire client journey</h2>
+        <div class="cards cards-3">
+          <article class="card feature reveal"><div class="feat-ic" aria-hidden="true">🌐</div><h3>40+ languages</h3><p>An AI agent that communicates with clients in over 40 languages.</p></article>
+          <article class="card feature reveal"><div class="feat-ic" aria-hidden="true">🧩</div><h3>Smart service bundling</h3><p>Suggests and combines the most relevant services for each client.</p></article>
+          <article class="card feature reveal"><div class="feat-ic" aria-hidden="true">💸</div><h3>Offers &amp; payment links</h3><p>Generates commercial offers and payment links instantly.</p></article>
+          <article class="card feature reveal"><div class="feat-ic" aria-hidden="true">📊</div><h3>Auto-CRM &amp; analytics</h3><p>Automatically saves leads to CRM with reporting and optimization.</p></article>
+          <article class="card feature reveal"><div class="feat-ic" aria-hidden="true">🔌</div><h3>Integrations</h3><p>Stripe, Google Analytics, WhatsApp, Telegram, and Web — out of the box.</p></article>
+          <article class="card feature reveal"><div class="feat-ic" aria-hidden="true">⚙️</div><h3>Dynamic pricing &amp; CRMs</h3><p>Dynamic pricing module plus HubSpot, Zoho, and Bitrix24 integrations.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Comparison ===== -->
+    <section class="section" id="why" aria-labelledby="why-title">
+      <div class="container narrow">
+        <p class="kicker kicker-dark reveal">Why BCA</p>
+        <h2 class="section-title reveal" id="why-title">Built for compliance — where generic AI can't go</h2>
+        <div class="table-wrap reveal" role="region" aria-label="BCA versus generic AI comparison" tabindex="0">
+          <table class="compare">
+            <thead>
+              <tr><th scope="col">Factor</th><th scope="col">BCA</th><th scope="col">General-purpose AI tools</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Legal-services rules (RDG)</th><td class="yes">Built to comply</td><td class="no">Restricted by law</td></tr>
+              <tr><th scope="row">Hallucination risk</th><td class="yes">Verified · minimized</td><td class="warn">High</td></tr>
+              <tr><th scope="row">Proprietary legal knowledge</th><td class="yes">12+ years of data</td><td class="no">None</td></tr>
+              <tr><th scope="row">Full client journey (inquiry → payment)</th><td class="yes">Yes</td><td class="warn">Partial</td></tr>
+              <tr><th scope="row">CRM &amp; payment integrations</th><td class="yes">Yes</td><td class="no">No</td></tr>
+              <tr><th scope="row">Multi-language support (40+)</th><td class="yes">Yes</td><td class="warn">Limited</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="section section-indigo" id="numbers" aria-labelledby="numbers-title">
+      <div class="container">
+        <p class="kicker reveal">By the numbers</p>
+        <h2 class="section-title light reveal" id="numbers-title">A massive, underserved market</h2>
+        <div class="stats">
+          <div class="stat reveal"><span class="stat-num"><span data-count="2.5" data-decimals="1"></span><span class="unit">B €</span></span><span class="stat-cap">German immigration services market / year</span></div>
+          <div class="stat reveal"><span class="stat-num"><span data-count="500"></span><span class="unit">+</span></span><span class="stat-cap">target active agencies</span></div>
+          <div class="stat reveal"><span class="stat-num"><span data-count="2000"></span><span class="unit">+</span></span><span class="stat-cap">practical cases in the knowledge base</span></div>
+          <div class="stat reveal"><span class="stat-num"><span data-count="40"></span><span class="unit">+</span></span><span class="stat-cap">languages supported by the AI agent</span></div>
+        </div>
+        <p class="src reveal">Market sources: Astute Analytica 2024 · Globe Newswire 2022 · BRAK 2025 · Research &amp; Markets 2024.</p>
+      </div>
+    </section>
+
+    <!-- ===== Roadmap ===== -->
+    <section class="section" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="container">
+        <p class="kicker kicker-dark reveal">Roadmap</p>
+        <h2 class="section-title reveal" id="roadmap-title">The road to launch</h2>
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <span class="tl-q">Step 1</span>
+            <h3>Legal validation &amp; product launch</h3>
+            <p>Complete the German MVP and compliance audit (RDG &amp; AI Act). Launch pilots with 10–15 German migration agencies.</p>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-q">Step 2</span>
+            <h3>Market entry &amp; partnerships</h3>
+            <p>Full rollout across Berlin, NRW, Bayern, and Baden-Württemberg. Strategic partnerships with chambers and legal associations.</p>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-q">Step 3</span>
+            <h3>Growth &amp; automation</h3>
+            <p>Integrate billing, analytics, and AI-based document workflows. Target 250+ active clients.</p>
+          </li>
+          <li class="tl-item reveal">
+            <span class="tl-q">Step 4</span>
+            <h3>Scale &amp; profitability</h3>
+            <p>Expand across Germany's federal states. Reach 500 clients and the profitability milestone.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Team ===== -->
+    <section class="section section-mist" id="team" aria-labelledby="team-title">
+      <div class="container narrow center">
+        <p class="kicker kicker-dark reveal">The team</p>
+        <h2 class="section-title reveal" id="team-title">40+ experts in immigration law, AI, and SaaS</h2>
+        <p class="lead reveal">
+          Operating in migration legal since 2012, with 15+ years across IT, B2B SaaS, LegalTech, and AI automation —
+          and projects delivered in Europe, Israel, and the USA.
+        </p>
+        <div class="leads reveal">
+          <div class="lead-card">
+            <span class="lead-avatar" aria-hidden="true">AK</span>
+            <span class="lead-name">Alexey Kochwasser</span>
+            <span class="lead-role">CEO · Product Strategy &amp; Sales</span>
+            <ul class="lead-tags" aria-label="Team &amp; focus areas">
+              <li>Product development</li>
+              <li>Productization</li>
+              <li>30+ market &amp; legal experts</li>
+            </ul>
+          </div>
+          <div class="lead-card">
+            <span class="lead-avatar" aria-hidden="true">EF</span>
+            <span class="lead-name">Evgenii Fedorov</span>
+            <span class="lead-role">Product Owner &amp; Visionary</span>
+            <ul class="lead-tags" aria-label="Team &amp; focus areas">
+              <li>Development</li>
+              <li>AI agent (NLP &amp; integrations)</li>
+              <li>10+ engineers &amp; AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container center">
+        <h2 id="cta-title" class="reveal">BCA = the future of legal &amp; immigration</h2>
+        <p class="lead reveal">
+          We're building the infrastructure for the next generation of consulting companies —
+          and inviting partners and investors to join the transformation.
+        </p>
+        <div class="cta-actions reveal">
+          <a class="btn btn-primary" href="mailto:info@bluecardagency.de">Get early access</a>
+          <a class="btn btn-ghost" href="mailto:info@bluecardagency.de">Talk to us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <svg class="logo-mark" viewBox="0 0 64 56" aria-hidden="true" focusable="false">
+          <path d="M26 6 H56 L44 24 H14 Z" fill="#9AAAE2" />
+          <path d="M22 22 H52 L40 40 H10 Z" fill="#ffffff" />
+        </svg>
+        <p class="footer-name">Business Consulting Automation</p>
+        <p class="footer-tag">Legal &amp; Immigration SaaS Platform</p>
+      </div>
+      <address class="footer-contacts">
+        <a href="https://bluecardagency.com" target="_blank" rel="noopener">bluecardagency.com</a>
+        <span>Blue Card Agency · Ziegelstr. 2, 10117 Berlin</span>
+        <a href="tel:+493089677876">+49 30 896 778 776</a>
+        <a href="mailto:info@bluecardagency.de">info@bluecardagency.de</a>
+      </address>
+    </div>
+    <div class="container footer-bottom">
+      <p class="disclaimer">BCA provides software and general information — not legal advice. Legal services are delivered by qualified, authorized professionals.</p>
+      <p>© <span id="year">2026</span> Blue Card Agency · Business Consulting Automation.</p>
+      <p class="muted">This is a preview page — the BCA platform is launching soon.</p>
+      <nav class="footer-legal" aria-label="Legal"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></nav>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>

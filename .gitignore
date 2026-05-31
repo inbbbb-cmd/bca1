@@ -1,0 +1,18 @@
+# Source material — not part of the deployed site
+*.pdf
+
+# Claude Code local tooling / settings
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.idea/
+.vscode/
+
+# Dependencies / build (not used by this static site, but safe to ignore)
+node_modules/
+dist/
+.vercel/
