@@ -1,53 +1,42 @@
-# BCA — Coming Soon landing page
+# Immigramind — landing page
 
-Interactive "coming soon" placeholder for **BCA — Business Consulting Automation**
-(an AI Legal & Immigration SaaS platform by Blue Card Agency). Built from the BCA
-investor deck, in the deck's brand style (deep indigo `#393B86` + gold `#F3D956`).
+Landing page for **Immigramind** — an AI immigration assistant by **Blue Card Agency**
+(BCA‑Relocation GmbH, Berlin). Static site, no build step — deploys to GitHub Pages / Vercel.
 
-It's a **static site** — plain HTML/CSS/JS, no build step — so it deploys as‑is to
-both **Vercel** and **GitHub Pages**.
+> **Status: Beta / draft.** The page is currently `noindex`. Several items still need
+> legal/business sign‑off before public launch — see **Open items** below.
 
 ## Files
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Page markup and content |
-| `styles.css` | Brand design system, layout, animations |
-| `main.js` | Scroll reveals, counters, mobile nav, hero particles |
-| `favicon.svg` | Logo favicon |
-| `og-image.png` | Social share preview (1200×630) |
-| `.nojekyll` | Tells GitHub Pages to serve files as‑is |
+| `index.html` | The Immigramind landing — self‑contained (inline CSS/JS) |
+| `fonts.css` + `fonts/` | Self‑hosted Inter + Syne (page) and Poppins (legal pages) — GDPR‑safe, no request to Google |
+| `impressum.html` | Impressum (real entity data) |
+| `datenschutz.html` | Datenschutzerklärung (draft template; red = to fill in) |
+| `styles.css` | Styles used by the Impressum / Datenschutz pages |
+| `favicon.svg` | Favicon (legal pages) |
+| `.github/workflows/deploy-pages.yml` | Auto‑deploy to GitHub Pages on push to `main` |
+| `.nojekyll` | Serve files as‑is on GitHub Pages |
 
 ## Run locally
 
-No tooling required — just open `index.html`. For a closer-to-production check:
-
 ```bash
-# Python (any 3.x)
-python -m http.server 8000
-# then open http://localhost:8000
+python -m http.server 8000   # then open http://localhost:8000
 ```
 
 ## Deploy
 
-### Vercel
-- **Dashboard:** New Project → import this repo → Framework Preset **Other** →
-  leave Build Command empty, Output Directory `.` → Deploy.
-- **CLI:** `npm i -g vercel` then `vercel` in this folder.
+- **GitHub Pages:** pushing to `main` triggers the workflow (auto‑enables Pages + deploys).
+  Live at https://inbbbb-cmd.github.io/bca1/ . Remove the `noindex` meta in `index.html` when ready.
+- **Vercel:** import the repo, Framework **Other**, empty build command, output `.`.
 
-### GitHub Pages
-Push to GitHub, then **Settings → Pages → Build and deployment → Source: Deploy
-from a branch**, pick your branch and `/ (root)`. The included `.nojekyll`
-ensures files are served untouched.
+## Open items (before public launch)
 
-## Customize
-
-- **Contacts / copy:** edit directly in `index.html`.
-- **Colors:** change the CSS variables under `:root` in `styles.css`.
-- **Call to action:** the hero and footer buttons open the visitor's email client
-  via `mailto:info@bluecardagency.de`. Change the address in `index.html`.
-
-## Notes
-- The source `*.pdf` deck is git‑ignored on purpose (it's not part of the site).
-- Content is intentionally marketing‑facing; investor specifics from the deck
-  (funding ask, detailed financials) are kept off the public page.
+- **RDG wording:** position as *information & orientation* + *human BCA experts handle the case*,
+  not “fully replaces legal consultation”; soften the chat demo; add a disclaimer.
+- **Verify all claims** (cases, years, languages, reviews, awards, partners) — must be truthful (UWG).
+- **Datenschutz:** fill the red placeholders (hosting, log‑retention, date); have a German lawyer
+  review Impressum + Datenschutz.
+- **Lead capture:** optional real form with GDPR consent instead of mailto/Telegram.
+- **Brand:** confirm name casing (using “Immigramind”) and which Telegram channel is canonical.

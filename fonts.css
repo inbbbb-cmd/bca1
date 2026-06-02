@@ -1,4 +1,4 @@
-/* Self-hosted fonts — GDPR-safe, no request to Google servers. */
+/* Self-hosted fonts (GDPR-safe, no request to Google). Inter+Syne for Immigramind; Poppins for legal pages. */
 
 @font-face {
   font-family: 'Inter';
@@ -54,4 +54,20 @@
   font-weight: 800;
   font-display: swap;
   src: url(fonts/poppins-800.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/syne-700.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(fonts/syne-800.woff2) format('woff2');
 }
