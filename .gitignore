@@ -1,5 +1,6 @@
-# Source material — not part of the deployed site
+# Source material / local deliverables — not part of the deployed site
 *.pdf
+*.docx
 
 # Claude Code local tooling / settings
 .claude/
