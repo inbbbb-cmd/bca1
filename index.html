@@ -387,6 +387,9 @@ footer {
   .stats-inner { flex-wrap: wrap; }
   .stat { flex: 0 0 50%; border-right: none; border-bottom: 1px solid var(--border); }
 }
+
+/* ── DOC VERSION ── */
+.doc-version { position: fixed; bottom: 8px; right: 11px; z-index: 400; font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: .4px; color: var(--faint); opacity: .7; pointer-events: none; }
 </style>
 </head>
 <body>
@@ -868,5 +871,6 @@ function addMsg() {
 }
 setTimeout(addMsg, 3000);
 </script>
+<div class="doc-version">Immigramind · v1.0 · 2026-06-01</div>
 </body>
 </html>

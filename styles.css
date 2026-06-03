@@ -314,6 +314,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .fill { color: #b3261e; background: #fdecea; font-weight: 600; padding: 0 5px; border-radius: 4px; }
 .todo-banner { background: #fdecea; border: 1px solid #f1b0a8; color: #922b21; padding: 14px 18px; border-radius: 10px; margin: 8px 0 28px; font-size: .95rem; line-height: 1.6; }
 .legal-note { border-left: 4px solid var(--gold); background: var(--mist); padding: 14px 18px; border-radius: 8px; margin: 22px 0 0; color: var(--slate); font-size: .95rem; }
+.doc-version { position: fixed; bottom: 8px; right: 11px; z-index: 50; font-family: var(--font-body); font-size: 10px; letter-spacing: .4px; color: var(--slate); opacity: .6; pointer-events: none; }
 
 /* ---------- Reveal animation ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
