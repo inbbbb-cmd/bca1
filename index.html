@@ -320,7 +320,7 @@ nav {
 
 /* ── TRUST ── */
 .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-top: 48px; }
-.trust-card { background: var(--card2); border: 1px solid var(--border); border-radius: 14px; padding: 24px; text-align: center; transition: border-color .25s; }
+.trust-card { display: block; color: inherit; background: var(--card2); border: 1px solid var(--border); border-radius: 14px; padding: 24px; text-align: center; transition: border-color .25s; }
 .trust-card:hover { border-color: rgba(0,207,239,0.25); }
 .trust-ico { font-size: 28px; margin-bottom: 12px; }
 .trust-n { font-family: 'Syne', sans-serif; font-size: 30px; font-weight: 800; color: var(--white); letter-spacing: -1px; }
@@ -492,7 +492,7 @@ footer {
   <div class="stats-inner">
     <div class="stat"><div class="stat-n">1300<em>+</em></div><div class="stat-l">семей переехали с BCA</div></div>
     <div class="stat"><div class="stat-n">7<em> лет</em></div><div class="stat-l">опыта команды</div></div>
-    <div class="stat"><div class="stat-n">5.0<em>★</em></div><div class="stat-l">181 отзыв Google</div></div>
+    <div class="stat"><div class="stat-n">5.0<em>★</em></div><div class="stat-l">183 отзыва Google</div></div>
     <div class="stat"><div class="stat-n">400<em>+</em></div><div class="stat-l">карьерных кейсов</div></div>
     <div class="stat"><div class="stat-n">24<em>/7</em></div><div class="stat-l">агент онлайн</div></div>
   </div>
@@ -791,8 +791,8 @@ footer {
     </div>
     <div class="trust-grid">
       <div class="trust-card fi"><div class="trust-ico">👨‍👩‍👧</div><div class="trust-n">1300<em>+</em></div><div class="trust-l">семей переехали</div></div>
-      <div class="trust-card fi"><div class="trust-ico">⭐</div><div class="trust-n">5.0<em>★</em></div><div class="trust-l">181 отзыв Google</div></div>
-      <div class="trust-card fi"><div class="trust-ico">📊</div><div class="trust-n">4.9<em>/5</em></div><div class="trust-l">239 отзывов ProvenExpert</div></div>
+      <a class="trust-card fi" href="https://www.google.com/maps/search/?api=1&amp;query=Blue%20Card%20Agency%2C%20Ziegelstr.%202%2C%2010117%20Berlin" target="_blank" rel="noopener"><div class="trust-ico">⭐</div><div class="trust-n">5.0<em>★</em></div><div class="trust-l">183 отзыва Google</div></a>
+      <a class="trust-card fi" href="https://www.provenexpert.com/de-de/blue-card-agency/" target="_blank" rel="noopener"><div class="trust-ico">📊</div><div class="trust-n">4.98<em>/5</em></div><div class="trust-l">244 · сводный (ProvenExpert)</div></a>
       <div class="trust-card fi"><div class="trust-ico">💼</div><div class="trust-n">400<em>+</em></div><div class="trust-l">карьерных размещений</div></div>
     </div>
     <div class="awards fi">
@@ -874,6 +874,6 @@ function addMsg() {
 }
 setTimeout(addMsg, 3000);
 </script>
-<div class="doc-version">Immigramind · v1.4 · 2026-06-04</div>
+<div class="doc-version">Immigramind · v1.5 · 2026-06-04</div>
 </body>
 </html>
