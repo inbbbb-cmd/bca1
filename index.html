@@ -330,6 +330,9 @@ nav {
 .award { background: var(--card2); border: 1px solid var(--border); border-radius: 12px; padding: 12px 18px; display: flex; align-items: center; gap: 10px; transition: border-color .25s; }
 .award:hover { border-color: rgba(232,184,48,0.35); }
 .award-ico { font-size: 20px; }
+.partners { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+.partner { display: flex; align-items: center; gap: 8px; background: var(--card2); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; color: var(--white); }
+.partner img { height: 26px; width: auto; display: block; }
 .award strong { display: block; font-size: 13px; color: var(--white); font-weight: 600; }
 .award span { font-size: 11.5px; color: var(--muted); }
 
@@ -800,7 +803,14 @@ footer {
       <div class="award"><span class="award-ico">📰</span><div><strong>Handelsblatt 2026</strong><span>Публикация о §24 и BCA</span></div></div>
       <div class="award"><span class="award-ico">🎓</span><div><strong>IHK-сертификат</strong><span>Сертифицированный менеджер</span></div></div>
       <div class="award"><span class="award-ico">📣</span><div><strong>19 600+ подписчиков</strong><span>Telegram @BlaueKarteD</span></div></div>
-      <div class="award"><span class="award-ico">🤝</span><div><strong>Deutsche Bank · Allianz · CHECK24</strong><span>Корпоративные партнёры</span></div></div>
+    </div>
+
+    <p class="label" style="margin-top:30px">Партнёры</p>
+    <div class="partners fi">
+      <div class="partner">Freedom24</div>
+      <div class="partner">OCT Group LLC</div>
+      <div class="partner">LaruHelpsUkraine e.V.</div>
+      <div class="partner">Club Dialog e.V.</div>
     </div>
   </div>
 </section>
@@ -874,6 +884,6 @@ function addMsg() {
 }
 setTimeout(addMsg, 3000);
 </script>
-<div class="doc-version">Immigramind · v1.13 · 2026-06-04</div>
+<div class="doc-version">Immigramind · v1.14 · 2026-06-04</div>
 </body>
 </html>
