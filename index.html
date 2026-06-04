@@ -364,6 +364,7 @@ footer {
 .footer-links a { color: var(--muted); font-size: 13px; transition: color .2s; }
 .footer-links a:hover { color: var(--white); }
 .footer-copy { color: var(--faint); font-size: 12px; }
+.footer-disclaimer { max-width: 1160px; margin: 14px auto 0; padding: 0 48px; font-size: 11px; line-height: 1.55; color: var(--faint); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1100px) {
@@ -422,19 +423,19 @@ footer {
   <div class="hero-inner">
     <div class="hero-left fi">
       <div class="hero-badge">ИИ-агент · иммиграция в Германию</div>
-      <h1 class="hero-h1">Личный эксперт<br>по переезду в<br><span class="accent">Германию</span></h1>
+      <h1 class="hero-h1">Личный ИИ-помощник<br>по переезду в<br><span class="accent">Германию</span></h1>
       <p class="hero-sub">Онлайн. 24 / 7. Без записи.</p>
       <p class="hero-desc">
         <strong>Immigramind</strong> — ИИ-агент от Blue Card Agency, обученный на актуальных немецких законах, 1300+ реальных кейсах и внутренних знаниях команды BCA.
         Отвечает на всё: от визы и ВНЖ до школ, врачей, налогов, аренды и изучения языка.
-        <strong>Полностью заменяет личную консультацию</strong> — и выдаёт готовый план с коммерческим предложением.
+        Быстро <strong>ориентирует</strong> по любому вопросу и <strong>готовит понятный план</strong> с предложением от BCA. Это <strong>информационный помощник, а не юридическая консультация</strong> — её при необходимости проводят специалисты BCA.
       </p>
       <div class="hero-price">
         <div class="hp-num"><sup>€</sup>150</div>
         <div class="hp-meta">
           <div class="hp-tag">1 месяц доступа</div>
           <div class="hp-line1">Неограниченные вопросы по всем темам</div>
-          <div class="hp-line2">Личная консультация эксперта: <s>150€/час</s></div>
+          <div class="hp-line2">Поиск ответов по часам: <s>от 150€/час</s></div>
           <div class="hp-line3">= Весь месяц за ту же цену</div>
         </div>
       </div>
@@ -470,11 +471,12 @@ footer {
           </div>
         </div>
         <div class="chat-result">
-          <div class="cr-title">📋 Итог анализа</div>
-          <div class="cr-item">§18a — переход через работу · 6–8 нед.</div>
+          <div class="cr-title">📋 Предварительный ориентир</div>
+          <div class="cr-item">§18a — переход через работу · ориентировочно 6–8 нед.</div>
           <div class="cr-item">Niederlassungserlaubnis по §9 · от 5 лет</div>
-          <div class="cr-item">Бюджет от 500€ · Документы: 7 позиций</div>
+          <div class="cr-item">Бюджет от 500€ · документы: ~7 позиций</div>
           <div class="cr-item">Поэтапный план + КП от BCA готов ↓</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:8px;line-height:1.5">Предварительный ориентир, не юридическая консультация. Точный план — со специалистом BCA.</div>
         </div>
         <div class="chat-input-row">
           <input class="chat-field" placeholder="Напишите вопрос..." readonly>
@@ -669,7 +671,7 @@ footer {
 <section id="output">
   <div class="wrap">
     <div class="fi">
-      <span class="label">Результат консультации</span>
+      <span class="label">Результат разбора с агентом</span>
       <h2>Что вы получите<br>по итогам общения</h2>
       <p style="color:var(--muted);margin-top:10px;max-width:520px;">Не просто ответы — полная дорожная карта иммиграции с планом действий и коммерческим предложением.</p>
     </div>
@@ -731,7 +733,7 @@ footer {
       <div class="vs-head">
         <div class="vh">Критерий</div>
         <div class="vh ai">🤖 Immigramind</div>
-        <div class="vh">👤 Личная консультация</div>
+        <div class="vh">👤 Самостоятельно / по часам</div>
       </div>
       <div class="vs-row"><div class="vc">Стоимость</div><div class="vc ai ok">150 € / месяц без лимита</div><div class="vc">150 €+ за 1 час</div></div>
       <div class="vs-row"><div class="vc">Доступность</div><div class="vc ai ok">24 / 7, мгновенно</div><div class="vc no">Запись 1–2 недели</div></div>
@@ -751,12 +753,12 @@ footer {
     <div class="fi" style="text-align:center">
       <span class="label">Стоимость</span>
       <h2>Один месяц — все темы,<br>без ограничений</h2>
-      <p style="color:var(--muted);margin-top:10px;">Ровно столько стоит один час с реальным экспертом. Только у вас — весь месяц.</p>
+      <p style="color:var(--muted);margin-top:10px;">Столько обычно стоит один час платного поиска ответов. У вас — целый месяц безлимита.</p>
     </div>
     <div class="price-box fi">
       <div class="price-popular">Ранний доступ</div>
       <div class="price-big"><sup>€</sup>150<sub>/мес</sub></div>
-      <p class="price-eq">Личная консультация эксперта BCA: <s>150€/час</s> &nbsp;→&nbsp; <strong>Весь месяц за ту же цену</strong></p>
+      <p class="price-eq">Поиск ответов по часам: <s>от 150€/час</s> &nbsp;→&nbsp; <strong>Весь месяц безлимита за ту же цену</strong></p>
       <div class="pf-grid">
         <div class="pf"><div class="pf-ico">🛂</div><div><div class="pf-t">Иммиграция и статус</div><div class="pf-s">§24, Blue Card, Chancenkarte, НЕ</div></div></div>
         <div class="pf"><div class="pf-ico">🏥</div><div><div class="pf-t">Медицина и страховка</div><div class="pf-s">Krankenkasse, врачи, рецепты</div></div></div>
@@ -834,6 +836,7 @@ footer {
     </div>
     <div class="footer-copy">© 2026 BCA-Relocation GmbH · Ziegelstr. 2, 10117 Berlin</div>
   </div>
+  <div class="footer-disclaimer">Immigramind — информационный помощник: даёт ориентир и план, а не юридическую консультацию. Правовое и налоговое сопровождение оказывают лицензированные специалисты и партнёры BCA.</div>
 </footer>
 
 <script>
@@ -850,9 +853,9 @@ document.querySelectorAll('.fi').forEach(el => obs.observe(el));
 // ANIMATED CHAT
 const chatBody = document.getElementById('chatBody');
 const extras = [
-  {r:'ai', t:'Вариант 1 — §18a: смена статуса через трудоустройство. Срок: 6–8 нед. Нужен трудовой договор.'},
+  {r:'ai', t:'Вариант 1 — §18a: смена статуса через трудоустройство. Ориентировочный срок: 6–8 нед., нужен трудовой договор.'},
   {r:'usr', t:'А когда смогу подать на гражданство?'},
-  {r:'ai', t:'При наличии НЕ по §9 — через 8 лет (7 лет с B2+). Показать бюджет по каждому варианту?'},
+  {r:'ai', t:'Ориентировочно: при НЕ по §9 — около 8 лет (7 с B2+); точные сроки уточнит специалист BCA. Показать бюджет по вариантам?'},
   {r:'usr', t:'Да, и нужно ли признание диплома?'},
   {r:'ai', t:'Зависит от профессии. IT — обычно нет. Медицина, инженерия — да. Какая у вас специальность?'},
 ];
@@ -871,6 +874,6 @@ function addMsg() {
 }
 setTimeout(addMsg, 3000);
 </script>
-<div class="doc-version">Immigramind · v1.0 · 2026-06-01</div>
+<div class="doc-version">Immigramind · v1.1 · 2026-06-04</div>
 </body>
 </html>
