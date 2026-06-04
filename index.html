@@ -459,24 +459,24 @@ footer {
         <div class="chat-body" id="chatBody">
           <div class="msg ai">
             <div class="msg-av">🤖</div>
-            <div class="bbl">Привет! Я ИИ-агент BCA. Расскажи о своей ситуации — разберём все варианты, документы, сроки и бюджет.</div>
+            <div class="bbl">Привет! Я ИИ-агент BCA. Помогу сориентироваться в переезде в Германию — варианты, документы, сроки, бюджет. С чего начнём?</div>
           </div>
           <div class="msg usr">
             <div class="msg-av">👤</div>
-            <div class="bbl">У меня §24, работаю 2 года. Хочу остаться насовсем</div>
+            <div class="bbl">Работаю в IT, хочу переехать с семьёй</div>
           </div>
           <div class="msg ai">
             <div class="msg-av">🤖</div>
-            <div class="bbl">Отлично, у вас есть 3 реальных пути. Анализирую ваш кейс...</div>
+            <div class="bbl">Покажу общую картину путей и соберу понятный план. Точные условия под ваш случай готовят специалисты BCA.</div>
           </div>
         </div>
         <div class="chat-result">
-          <div class="cr-title">📋 Предварительный ориентир</div>
-          <div class="cr-item">§18a — переход через работу · ориентировочно 6–8 нед.</div>
-          <div class="cr-item">Niederlassungserlaubnis по §9 · от 5 лет</div>
-          <div class="cr-item">Бюджет от 500€ · документы: ~7 позиций</div>
-          <div class="cr-item">Поэтапный план + КП от BCA готов ↓</div>
-          <div style="font-size:11px;color:var(--muted);margin-top:8px;line-height:1.5">Предварительный ориентир, не юридическая консультация. Точный план — со специалистом BCA.</div>
+          <div class="cr-title">📋 Что соберём для вас</div>
+          <div class="cr-item">Обзор подходящих направлений (общая информация)</div>
+          <div class="cr-item">Чек-лист документов под ваш профиль</div>
+          <div class="cr-item">Ориентир по срокам и бюджету</div>
+          <div class="cr-item">Поэтапный план + сопровождение специалистов BCA ↓</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:8px;line-height:1.5">Общая информация, не юридическая консультация. Индивидуальную оценку дают специалисты BCA.</div>
         </div>
         <div class="chat-input-row">
           <input class="chat-field" placeholder="Напишите вопрос..." readonly>
@@ -853,11 +853,11 @@ document.querySelectorAll('.fi').forEach(el => obs.observe(el));
 // ANIMATED CHAT
 const chatBody = document.getElementById('chatBody');
 const extras = [
-  {r:'ai', t:'Вариант 1 — §18a: смена статуса через трудоустройство. Ориентировочный срок: 6–8 нед., нужен трудовой договор.'},
-  {r:'usr', t:'А когда смогу подать на гражданство?'},
-  {r:'ai', t:'Ориентировочно: при НЕ по §9 — около 8 лет (7 с B2+); точные сроки уточнит специалист BCA. Показать бюджет по вариантам?'},
-  {r:'usr', t:'Да, и нужно ли признание диплома?'},
-  {r:'ai', t:'Зависит от профессии. IT — обычно нет. Медицина, инженерия — да. Какая у вас специальность?'},
+  {r:'ai', t:'Для IT обычно рассматривают Blue Card и визу для квалифицированных специалистов — что подходит, зависит от диплома и зарплаты.'},
+  {r:'usr', t:'А что с гражданством потом?'},
+  {r:'ai', t:'Путь к ПМЖ и гражданству есть — сроки зависят от стажа и уровня языка. Точный расчёт под вас сделают специалисты BCA.'},
+  {r:'usr', t:'Нужно признание диплома?'},
+  {r:'ai', t:'Часто да — зависит от профессии. Подскажу, как это проверить, и подготовлю чек-лист.'},
 ];
 let idx = 0;
 function addMsg() {
@@ -874,6 +874,6 @@ function addMsg() {
 }
 setTimeout(addMsg, 3000);
 </script>
-<div class="doc-version">Immigramind · v1.2 · 2026-06-04</div>
+<div class="doc-version">Immigramind · v1.3 · 2026-06-04</div>
 </body>
 </html>
