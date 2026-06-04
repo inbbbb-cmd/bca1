@@ -331,8 +331,11 @@ nav {
 .award:hover { border-color: rgba(232,184,48,0.35); }
 .award-ico { font-size: 20px; }
 .partners { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
-.partner { display: flex; align-items: center; gap: 8px; background: var(--card2); border: 1px solid var(--border); border-radius: 12px; padding: 14px 20px; font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; color: var(--white); }
-.partner img { height: 26px; width: auto; display: block; }
+.partner { display: flex; align-items: center; gap: 11px; background: var(--card2); border: 1px solid var(--border); border-radius: 12px; padding: 12px 18px 12px 12px; transition: border-color .25s; }
+.partner:hover { border-color: rgba(0,207,239,0.35); }
+.partner-mark { width: 38px; height: 38px; flex-shrink: 0; border-radius: 9px; background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #fff; font-family: 'Syne', sans-serif; font-weight: 800; font-size: 12px; letter-spacing: .3px; display: flex; align-items: center; justify-content: center; }
+.partner-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 14px; color: var(--white); line-height: 1.2; }
+.partner img { height: 30px; width: auto; display: block; }
 .award strong { display: block; font-size: 13px; color: var(--white); font-weight: 600; }
 .award span { font-size: 11.5px; color: var(--muted); }
 
@@ -807,10 +810,10 @@ footer {
 
     <p class="label" style="margin-top:30px">Партнёры</p>
     <div class="partners fi">
-      <div class="partner">Freedom24</div>
-      <div class="partner">OCT Group LLC</div>
-      <div class="partner">LaruHelpsUkraine e.V.</div>
-      <div class="partner">Club Dialog e.V.</div>
+      <div class="partner"><span class="partner-mark">F24</span><span class="partner-name">Freedom24</span></div>
+      <div class="partner"><span class="partner-mark">OCT</span><span class="partner-name">OCT Group LLC</span></div>
+      <div class="partner"><span class="partner-mark">LHU</span><span class="partner-name">LaruHelpsUkraine e.V.</span></div>
+      <div class="partner"><span class="partner-mark">CD</span><span class="partner-name">Club Dialog e.V.</span></div>
     </div>
   </div>
 </section>
@@ -884,6 +887,6 @@ function addMsg() {
 }
 setTimeout(addMsg, 3000);
 </script>
-<div class="doc-version">Immigramind · v1.14 · 2026-06-04</div>
+<div class="doc-version">Immigramind · v1.15 · 2026-06-04</div>
 </body>
 </html>
